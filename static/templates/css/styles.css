@@ -1,0 +1,94 @@
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #f3e7e9, #e3eeff);
+    }
+
+    .container {
+      display: flex;
+      max-width: 900px;
+      width: 90%;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+      background-color: #fff;
+    }
+
+    .login-form {
+      flex: 1;
+      padding: 50px 40px;
+    }
+
+    .login-form h2 {
+      margin-bottom: 30px;
+      color: #333;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(to right, #a18cd1, #fbc2eb);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .poem-section {
+      flex: 1;
+      padding: 40px 30px;
+      background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=900&q=80') no-repeat center;
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      backdrop-filter: brightness(0.7);
+    }
+
+    .poem-section h1 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .poem-section p {
+      font-size: 18px;
+      line-height: 1.7;
+      white-space: pre-line;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .poem-section {
+        text-align: center;
+        padding: 30px 20px;
+      }
+    }
+  
